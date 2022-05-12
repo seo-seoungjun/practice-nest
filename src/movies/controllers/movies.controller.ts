@@ -7,10 +7,11 @@ import {
   Patch,
   Body,
 } from '@nestjs/common';
-import { MoviesService } from './movies.service';
-import { Movie } from './interfaces/movie.interface';
-import { CreateMovieDto } from './dto/create-movie.dto';
-import { UpdateMovieDto } from './dto/update-movie.dto';
+
+import { UpdateMovieDto } from './../dto/update-movie.dto';
+import { CreateMovieDto } from './../dto/create-movie.dto';
+import { Movie } from './../interfaces/movie.interface';
+import { MoviesService } from './../services/movies.service';
 
 @Controller('movies')
 export class MoviesController {
